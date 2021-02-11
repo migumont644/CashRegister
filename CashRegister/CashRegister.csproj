@@ -83,5 +83,17 @@
   <ItemGroup>
     <None Include="Resources\Dot Matrix Printer-SoundBible.com-790333844.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beep Ping-SoundBible.com-217088958.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass_ping-Go445-1207030150.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer Error-SoundBible.com-1655839472.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

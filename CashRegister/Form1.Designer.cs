@@ -52,6 +52,8 @@
             this.printReceiptButten = new System.Windows.Forms.Button();
             this.receiptOutput = new System.Windows.Forms.Label();
             this.newOrderButton = new System.Windows.Forms.Button();
+            this.cameraImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.cameraImage)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -212,6 +214,7 @@
             // 
             // calculateChangeButton
             // 
+            this.calculateChangeButton.Enabled = false;
             this.calculateChangeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateChangeButton.Location = new System.Drawing.Point(57, 363);
             this.calculateChangeButton.Name = "calculateChangeButton";
@@ -242,6 +245,7 @@
             // printReceiptButten
             // 
             this.printReceiptButten.Cursor = System.Windows.Forms.Cursors.Default;
+            this.printReceiptButten.Enabled = false;
             this.printReceiptButten.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printReceiptButten.Location = new System.Drawing.Point(57, 431);
             this.printReceiptButten.Name = "printReceiptButten";
@@ -263,6 +267,7 @@
             // newOrderButton
             // 
             this.newOrderButton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.newOrderButton.Enabled = false;
             this.newOrderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newOrderButton.Location = new System.Drawing.Point(318, 442);
             this.newOrderButton.Name = "newOrderButton";
@@ -272,12 +277,24 @@
             this.newOrderButton.UseVisualStyleBackColor = true;
             this.newOrderButton.Click += new System.EventHandler(this.NewOrderButton_Click);
             // 
+            // cameraImage
+            // 
+            this.cameraImage.Image = global::CashRegister.Properties.Resources.camera;
+            this.cameraImage.Location = new System.Drawing.Point(346, 363);
+            this.cameraImage.Name = "cameraImage";
+            this.cameraImage.Size = new System.Drawing.Size(68, 52);
+            this.cameraImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cameraImage.TabIndex = 23;
+            this.cameraImage.TabStop = false;
+            this.cameraImage.Visible = false;
+            // 
             // securitySystemsShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(525, 488);
+            this.Controls.Add(this.cameraImage);
             this.Controls.Add(this.newOrderButton);
             this.Controls.Add(this.receiptOutput);
             this.Controls.Add(this.printReceiptButten);
@@ -304,6 +321,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "securitySystemsShop";
             this.Text = "Security Systems Shop";
+            ((System.ComponentModel.ISupportInitialize)(this.cameraImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,6 +352,7 @@
         private System.Windows.Forms.Button printReceiptButten;
         private System.Windows.Forms.Label receiptOutput;
         private System.Windows.Forms.Button newOrderButton;
+        private System.Windows.Forms.PictureBox cameraImage;
     }
 }
 
